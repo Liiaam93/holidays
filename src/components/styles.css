@@ -75,3 +75,6 @@ button:hover {
   border-bottom: 1px solid black;
   flex-direction: row;
 }
+input:focus {
+  outline: none;
+}
