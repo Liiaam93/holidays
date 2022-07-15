@@ -118,4 +118,7 @@ input:focus {
     margin: 0;
     font-size: 12px;
   }
+  .icons {
+    height: 20px;
+  }
 }
