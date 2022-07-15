@@ -8,10 +8,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <head>
-      <title>Holiday Finder</title>
-      <meta name="description" content="Find Your Perfect Holiday!" />
-    </head>
     <App />
   </React.StrictMode>
 );
