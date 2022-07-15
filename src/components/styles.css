@@ -1,5 +1,13 @@
+h1 {
+  font-size: 24px;
+}
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
   flex: 1;
   flex-direction: row;
   justify-content: center;
@@ -8,6 +16,7 @@
   color: #fff;
   border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-item {
@@ -23,15 +32,17 @@ button {
   padding: 15px;
   border-radius: 30px;
   width: fit-content;
-  font-size: 20px;
+  font-size: 18px;
   border: 0px;
 }
 
 .search-container {
-  margin-top: 21vh;
+  margin-top: 30vh;
   width: 100vw;
   height: 20vh;
   background-color: #fff;
+  position: fixed;
+  bottom: 0;
 }
 .form-container {
   justify-content: center;
@@ -39,7 +50,8 @@ button {
   flex-direction: row;
 }
 input {
-  border: 0px;
+  border: 0;
+  width: 100%;
   padding: 5px;
   height: 40px;
 }
@@ -77,4 +89,27 @@ button:hover {
 }
 input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 16px;
+  }
+  button {
+    font-size: 12px;
+  }
+  .form-container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .form-item {
+    width: 80%;
+  }
+  .search-container {
+    height: 40vh;
+  }
+  .button-container {
+    align-self: center;
+    padding-top: 10px;
+  }
 }

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Button from "./components/Button";
@@ -16,14 +15,14 @@ function App() {
   }, []);
 
   return (
-    <div className="heading">
+    <>
       <Navbar />
-      <div className="intro">
-        <p>Ready to find your next dream holiday?</p>
+      <section className="intro">
+        <h2>Ready to find your next dream holiday?</h2>
         <Button buttonText="Get Started" route="/" />
-      </div>
+      </section>
       <HolidaySearch />
-    </div>
+    </>
   );
 }
 

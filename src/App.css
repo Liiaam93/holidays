@@ -1,15 +1,14 @@
 body {
   font-family: "Be Vietnam Pro";
-}
-
-.heading {
   background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg");
-  height: 100vh;
-  background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 50%;
+  background-size: 100%;
+  background-position-y: 40%;
 }
 
+h2 {
+  font-size: 56px;
+}
 .intro {
   margin-top: 10vw;
   display: flex;
@@ -17,7 +16,17 @@ body {
   width: 35%;
   color: white;
   margin-left: 10vw;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 3px;
+  font-size: 56px;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px black;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: top;
+  }
+  .intro {
+    font-size: 24px;
+    margin-top: 20vh;
+  }
 }
