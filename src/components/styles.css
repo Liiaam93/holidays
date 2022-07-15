@@ -107,7 +107,8 @@ input:focus {
     width: 80%;
   }
   .search-container {
-    height: 40vh;
+    height: fit-content;
+    font-size: 14px;
   }
   .button-container {
     align-self: center;
